@@ -83,6 +83,7 @@ public class MainMenu implements Screen {
             @Override
             public void clicked(InputEvent event, float x, float y) {
                 // Handle button click here
+                app.setScreen(new BuildScreen(app));
                 Gdx.app.log("Build Rockets", "Clicked");
             }
         });

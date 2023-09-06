@@ -109,7 +109,7 @@ public class SettingScreen implements Screen {
 
     @Override
     public void resize(int width, int height) {
-
+        stage.getViewport().update(width, height, true);
     }
 
     @Override
@@ -131,5 +131,7 @@ public class SettingScreen implements Screen {
     public void dispose() {
         skin.dispose();
         stage.dispose();
+        font48.dispose();
+        font24.dispose();
     }
 }
